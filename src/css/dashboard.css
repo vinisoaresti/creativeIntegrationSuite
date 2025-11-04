@@ -2,10 +2,6 @@
   filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
 }
 
-main {
-  height: 90vh;
-}
-
 .page-background {
   position: fixed;
   top: 0;
@@ -16,13 +12,126 @@ main {
   z-index: -1;
 }
 
+main {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 13vh;
+}
+
+#section-title {
+  align-self: flex-start;
+  font-size: 64px;
+  margin-left: 25px;
+}
+
 .table-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
   text-align: left;
+  width: 95vw;
+  height: 65vh;
+  border: 2px solid #441155;
+  border-radius: 20px;
+  background: rgba(58, 16, 72, 0.5);
+}
+
+#section-subtitle {
+  align-self: flex-start;
+  font-size: 28px;
+  margin: 10px 0px 10px 25px;
+}
+
+table {
   width: 95%;
-  height: 90%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  align-self: center;
+  border-radius: 20px;
+}
+
+tr {
+  border-bottom: 1px solid #734384;
+}
+
+tr:last-child {
+  border-bottom: 0px;
+}
+
+th:first-child {
+  border-top-left-radius: 20px;
+}
+
+th:last-child {
+  border-top-right-radius: 20px;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius: 20px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+tr:nth-child(odd) {
+  background-color: #36203d;
+}
+
+tr:nth-child(even) {
+  background-color: #402548;
+}
+
+th,
+td {
+  font-family: "Roboto Flex Semibold", sans-serif;
+  font-size: 24px;
+  height: 50px;
+}
+
+td {
+  vertical-align: bottom;
+}
+
+th:first-child {
+  height: 65px;
+}
+
+th:first-child,
+td:first-child {
+  padding-left: 10px;
+}
+
+#table-header,
+#table-footer {
+  background-color: #301e36;
+}
+
+#table-header {
+  height: 50px;
+}
+
+#table-footer {
+  text-align: end;
+}
+
+#botao-ver-mais {
+  height: 50px;
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#icone-historico {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+  position: relative;
+  top: -3px;
 }
 
 footer {
