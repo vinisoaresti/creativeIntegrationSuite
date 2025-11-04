@@ -25,10 +25,11 @@
             </nav>
     </header>
     <main>
-        <h1>Histórico</h1>
+        <h1 id='section-title'>Histórico</h1>
         <div class='table-wrapper'>
+            <h2 id='section-subtitle'>Visão Geral</h2>
             <table>
-                <tr>
+                <tr id='table-header'>
                     <th>Nome do Conteúdo</th>
                     <th>Tipo</th>
                     <th>Plataforma(s)</th>
@@ -168,11 +169,16 @@
                     <td>Postado</td>
                     <td>
                         <div class='table-options'>
-                            <img src="img/iconsAndSvgs/tableOptionCreate.png" alt="">
+                            <a href="#create"><img src="img/iconsAndSvgs/tableOptionCreate.png" alt=""></a>
                             <img src="img/iconsAndSvgs/tableOptionRead.png" alt="">
                             <img src="img/iconsAndSvgs/tableOptionUpdate.png" alt="">
                             <img src="img/iconsAndSvgs/tableOptionDelete.png" alt="">
                         </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="5" id='table-footer'>
+                        <a href="#" id='botao-ver-mais'>Ver Mais <img src="img/iconsAndSvgs/history.png" id="icone-historico" alt="Ícone de histórico da tabela"></a>
                     </td>
                 </tr>
             </table>
